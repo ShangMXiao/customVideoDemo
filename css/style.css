@@ -1,0 +1,212 @@
+@charset 'UTF-8';
+/**
+ * 
+ * @authors ${jsx} (${923328230@qq.com})
+ * @date    2017-07-18
+ * @version $Id$
+ */
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.vContainer
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 640px;
+    height: 360px;
+    margin: 30px auto;
+
+    background-color: #dedede;
+}
+.caption
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 10px;
+
+    color: #ccc;
+    background-color: #1f1f1f;
+}
+.control
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    color: #ccc;
+    background-color: #1f1f1f;
+}
+.control .top
+{
+    height: 11px;
+    padding: 1px 5px;
+
+    border-bottom: 1px solid #404040;
+    background-color: #1f1f1f;
+}
+.control .top .progress
+{
+    position: relative;
+
+    float: left;
+
+    width: 85%;
+    height: 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    background-color: #404040;
+}
+.control .top .progress .timeBar
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    border-radius: 5px;
+    background-color: #f9d43a;
+}
+.control .top .time
+{
+    font-size: 0;
+    line-height: 12px;
+
+    float: right;
+
+    width: 15%;
+
+    text-align: center;
+}
+.control .top .time span
+{
+    font-size: 11px;
+}
+.control .bottom
+{
+    clear: both;
+
+    background: #1f1f1f;
+}
+.control .bottom .button
+{
+    float: left;
+
+    width: 32px;
+    height: 32px;
+    padding: 0 5px;
+
+    cursor: pointer;
+}
+.control .bottom .play
+{
+    background: url('../images/play.png') no-repeat 7px 2px;
+}
+
+.control .bottom .pause
+{
+    background: url('../images/pause.png') no-repeat 7px 2px;
+}
+
+.control .bottom .stop
+{
+    background: url('../images/stop.png') no-repeat 7px 2px;
+}
+
+.control .bottom .mute
+{
+    background: url('../images/mute.png') no-repeat 7px 2px;
+}
+
+.control .bottom .sound
+{
+    background: url('../images/sound.png') no-repeat 7px 2px;
+}
+
+.control .bottom .text
+{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+.control .bottom .selected
+{
+    color: #fff;
+}
+
+.control .bottom .sound,
+.control .bottom .mute
+{
+    float: right;
+}
+
+.control .bottom .volume
+{
+    position: relative;
+
+    float: right;
+
+    width: 70px;
+    height: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    background-color: #404040;
+}
+
+.control .bottom .volume .volumeBar
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background-color: #eee;
+}
+
+.loading
+{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    width: 54px;
+    height: 55px;
+    margin-top: -27px;
+    margin-left: -27px;
+
+    background: url('../images/loading.gif') no-repeat 0 0;
+}
